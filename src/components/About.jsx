@@ -12,7 +12,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = React.memo(({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -38,7 +38,7 @@ const ServiceCard = ({ index, title, icon }) => (
       </div>
     </motion.div>
   </Tilt>
-);
+));
 
 const About = () => {
   return (
@@ -52,11 +52,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in Python
-        JavaScript, and have decent knowledge in frameworks like React, Node.js, and
-        flask. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a backend software engineer with 3+ years of experience designing and building scalable distributed systems, REST APIs, and microservices. I specialize in Python (FastAPI, Flask, Django), system design, and cloud deployments (AWS, Docker, Kubernetes). I'm passionate about creating efficient, maintainable solutions that solve real-world problems through innovative technology.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

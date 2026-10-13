@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react-refresh/only-export-components */
 
+import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -10,7 +11,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
+const ProjectCard = React.memo(({
   index,
   name,
   description,
@@ -67,7 +68,7 @@ const ProjectCard = ({
       </Tilt>
     </motion.div>
   );
-};
+});
 
 const Works = () => {
   return (

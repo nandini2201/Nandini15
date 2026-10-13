@@ -22,7 +22,8 @@ import threejs from "./tech/threejs.svg";
 
 import Fynii from "./company/Fynii.png";
 import ciena from "./company/ciena.png";
-import P2P from "./company/P2P.png"
+import P2P from "./company/P2P.png";
+import trasna from "./company/meta.png";
 
 import Invoice from "./Invoice.png";
 import netflix from "./netflix.png";
@@ -52,6 +53,7 @@ export {
   P2P,
   ciena,
   Fynii,
+  trasna,
   Invoice,
   netflix,
   simon,

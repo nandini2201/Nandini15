@@ -17,6 +17,7 @@ import {
   Fynii,
   P2P,
   ciena,
+  trasna,
   Invoice,
   netflix,
   simon,
@@ -99,10 +100,6 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
   },
@@ -110,42 +107,30 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Paper2publish",
-    icon: P2P,
+    title: "Software Engineer (Backend)",
+    company_name: "Trasna Solutions",
+    icon: trasna,
     iconBg: "#383E56",
-    date: "March 2020 - July 2020",
+    date: "Sep 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed 20+ scalable backend services using FastAPI and Flask with RESTful architecture.",
+      "Improved API performance by up to 40% using PostgreSQL indexing, query optimization, and Redis caching.",
+      "Built distributed microservices handling high-volume transactions using Celery, RabbitMQ, and asynchronous processing.",
+      "Implemented JWT-based authentication and role-based access control for secure APIs.",
+      "Built Dockerized services and deployed applications using CI/CD pipelines on cloud infrastructure.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Fynii infotech",
-    icon: Fynii,
-    iconBg: "#383E56",
-    date: "March 2021 - July 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Testing and Automation Engineer",
-    company_name: "Ciena",
+    title: "Software Engineer",
+    company_name: "Ciena India Pvt Ltd",
     icon: ciena,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - June 2023",
+    date: "Jan 2023 - Aug 2023",
     points: [
-      "Testing and Automation Engineer with a focus on network infrastructure.",
-      "Specialization in testing both Layer 2 and Layer 3 devices. with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Strong background in Python and have leveraged tools like Pytest to streamline the testing process. ",
-      " My responsibilities have included designing and executing test strategies, implementing automated testing solutions, and ensuring the reliability and performance of network devices.",
+      "Developed automation tools for MPLS and BGP network systems, reducing manual effort by 30%.",
+      "Built RPC-based automation and testing frameworks for large-scale network validation.",
+      "Improved test coverage across distributed routing environments through automated test pipelines.",
+      "Strong background in Python and leveraged tools like Pytest to streamline the testing process.",
     ],
   },
 ];
@@ -180,90 +165,90 @@ const testimonials = [
 const projects = [
   {
     name: (
+      <a href="https://resulens.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        onMouseEnter={(e) => (e.target.style.textDecoration = "underline")}
+        onMouseLeave={(e) => (e.target.style.textDecoration = "none")}>
+        ResuLens
+      </a>
+    ),
+    description:
+      "AI-powered resume evaluation system using LLMs for job description matching and candidate scoring. Features LLM-based scoring for ATS optimization, keyword extraction, and skill matching using Grok AI.",
+    tags: [
+      {
+        name: "fastapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "grok-ai",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Invoice,
+    source_code_link: "https://github.com/nandini2201/ResuLens",
+  },
+  {
+    name: (
+      <a href="https://smartclips-ai.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        onMouseEnter={(e) => (e.target.style.textDecoration = "underline")}
+        onMouseLeave={(e) => (e.target.style.textDecoration = "none")}>
+        SmartClips AI
+      </a>
+    ),
+    description:
+      "Full-stack AI platform for automated short-form video generation from text prompts. Integrated AI APIs for content generation and automated media pipeline processing with secure authentication.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: netflix,
+    source_code_link: "https://github.com/nandini2201/SmartClips-AI",
+  },
+  {
+    name: (
       <a href="https://invoice-app-sage.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={(e) => (e.target.style.textDecoration = "underline")}
         onMouseLeave={(e) => (e.target.style.textDecoration = "none")}>
-        Invoice app
+        Invoice Management System
       </a>
     ),
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Full-stack invoice management system with analytics and reporting features. Designed scalable REST APIs and optimized MongoDB schema for fast queries with advanced search and filtering.",
     tags: [
       {
-        name: "react",
+        name: "node.js",
         color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Invoice,
-    source_code_link: "https://github.com/nandini2201/Invoice-app",
-  },
-  {
-    name: (
-      <a href="https://netflix-clone-a468e.web.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        onMouseEnter={(e) => (e.target.style.textDecoration = "underline")}
-        onMouseLeave={(e) => (e.target.style.textDecoration = "none")}>
-        Netflix Clone
-      </a>
-    ),
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss/css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: netflix,
-    source_code_link: "https://github.com/nandini2201/Netflix-Clone",
-  },
-  {
-    name: (
-      <a href="https://the-simon-game-three.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        onMouseEnter={(e) => (e.target.style.textDecoration = "underline")}
-        onMouseLeave={(e) => (e.target.style.textDecoration = "none")}>
-        The Simon Game
-      </a>
-    ),
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
         color: "pink-text-gradient",
       },
     ],
     image: simon,
-    source_code_link: "https://github.com/nandini2201/The-Simon-game",
+    source_code_link: "https://github.com/nandini2201/Invoice-app",
   },
 ];
 
